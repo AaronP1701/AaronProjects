@@ -4,6 +4,7 @@ dup2() - system call has more control over the duplicating file descriptor of us
 dup2() automatically closes the oldfd(1st parameter), and duplicates newfd(2nd parameter) and assign it to oldfd
 this means after dup2(), both newfd and oldfd refers to same file that was open by newfd
 
+requires newFile2.log
 **/
 
 #include <stdio.h>
