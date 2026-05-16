@@ -4,10 +4,12 @@
 #include <fcntl.h>
 #include <errno.h>
 
-void main ()
-{
+void main (){
+
     int fd;
-    fd = open("startup", O_RDONLY); //write only mode
+    fd = open("startup.txt", O_RDONLY); //opens file for user, sets the permission
+
+//O_CREAT = create new file
 
     if ( fd == -1 )
     {
@@ -17,4 +19,5 @@ void main ()
     else {
         printf("\n open() system call was executed successfully\n");
     }
+
 }
