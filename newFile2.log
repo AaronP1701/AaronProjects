@@ -1,2 +1,0 @@
-
- Output not written to screen, rather written to file using dup2() 
