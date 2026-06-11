@@ -1,0 +1,53 @@
+class Solution(object):
+    def twoSum(self, nums = [], target = 0):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+       
+        finalArray = []
+        node = 0
+       
+        for i in range(0,len(nums)):
+
+            if i > 0:
+               if nums[i] + nums[node] == target:
+                   finalArray.append(node)
+                   finalArray.append(i)
+
+            node = i
+        return finalArray
+    
+
+class Solution2(object):
+    def twoSum2(self, nums = [], target = 0):
+        valueToIndex = {}
+
+        for i, num in enumerate(nums):
+            neededValue = target - num
+
+            if neededValue in valueToIndex:
+                return [valueToIndex[neededValue],i]
+            valueToIndex[nums[i]] = 1
+
+if __name__=="__main__":
+
+    nums = [3,2,4]
+    target = 6
+    myList1 = Solution()
+    print(myList1.twoSum(nums, target))
+
+    myList2 = Solution2()
+    print(myList2.twoSum2(nums, target))
+
+'''
+
+So in your wording:
+Method 1: Streaming
+Method 2: Eager/materialized iteration
+Method 3: Index-based iteration
+Method 4: Condition-based iteration
+Method 5: Manual iterator pulling
+
+'''

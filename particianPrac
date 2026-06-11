@@ -1,0 +1,95 @@
+class Solution(object):
+    def __init__(self, nums = [1,2,3,4,5],  k = 0):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        self.__nums = nums
+        self.__k = k
+
+    def getList():
+        return self.__nums
+
+    def waysToPartition() -> int:
+        val = getList()
+        for i in range(0,len(self.__nums)/2):
+            print(i)
+
+
+def hashmap_example():
+    scores = {}
+
+    # Add key-value pairs
+    scores["Alice"] = 95
+    scores["Bob"] = 88
+    scores["Charlie"] = 92
+
+    # Get a value by key
+    alice_score = scores["Alice"]
+    print("Alice:", alice_score)
+
+    # Check if a key exists
+    if "Bob" in scores:
+        print("Bob is in the map")
+
+    # Update a value
+    scores["Bob"] = 90
+
+    # Loop through entries
+    for name, score in scores.items():
+        print(f"{name} -> {score}")
+
+    # Remove a key
+    scores.pop("Charlie", None)
+
+    print("Final map:", scores)
+
+
+def number_stream(limit):
+    """Yields numbers from 0 to limit-1 lazily (stream-like)."""
+    for n in range(limit):
+        yield n
+
+
+    # Example usage
+    for x in number_stream(5):
+        print(x)  # 0, 1, 2, 3, 4
+
+
+def demo():#yield function test
+    yield 10
+    yield 20
+    yield 30
+
+def restoreString(s ="abc" , indices = [0,1,2]):
+    """
+    :type s: str
+    :type indices: List[int]
+    :rtype: str
+    """
+    result = [] 
+    dictionary = {}
+   
+    for i in indices:
+        dictionary[indices[i]] = s[i]
+
+    for i in range(len(s)):
+        result.append(dictionary[i])
+
+    return ''.join(result)
+
+if __name__ == "__main__":
+
+   restoreString()
+
+    
+
+    
+'''
+Method 1: Streaming
+Method 2: Eager/materialized iteration
+Method 3: Index-based iteration
+Method 4: Condition-based iteration
+Method 5: Manual iterator pulling
+'''
