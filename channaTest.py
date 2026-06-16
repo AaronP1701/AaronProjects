@@ -72,8 +72,17 @@ def addElement():
 
     print (channaList)
 
-
+#          READ ME!!!!!
+# all of the above functions are previous projects you have done
 if __name__ == "__main__":
+
+    
+    myList = [1,4,7,2,10,4,6,3,2,9,6]
+    s = input("what is your favorite number?: ")
+
+    # Here we have a list - your job is determine if the user's input (an integer) is greater than an element in the list. 
+    # Have the program print out each integer that is less than the user input s
+
 
 
     
