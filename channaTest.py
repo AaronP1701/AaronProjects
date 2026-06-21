@@ -77,19 +77,31 @@ def addElement():
 if __name__ == "__main__":
 
     
-    myList = [1,4,7,2,10,4,6,3,2,9,6]
-    s = input("what is your favorite number?: ")
-
     # Here we have a list - your job is determine if the user's input (an integer) is greater than an element in the list. 
     # Have the program print out each integer that is less than the user input s
 
 
 
-    
+    myList = [1,4,7,2,10,4,6,3,2,9,6]
+    myList.append(1)
+    myList.append(2)
+    myList.append(3)
+    myList.append(4)
+    myList.append(6)
+    myList.append(7)
+    myList.append(9)
+    myList.append(10)
 
-       
+    s = input("what is your favorite number?")
 
-    
+    while s == str: # gets s when its a string
+        s = input("Type an integer") # breaks when it become an integer
 
+    for i in range(1, len(myList)): #starts at index 1
+        myList[i] # unclear
+
+    if s == int:
+        i < s
+        print(i)
 
 
