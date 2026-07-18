@@ -103,6 +103,9 @@ if __name__ == "__main__":
     # This code counts backwards from 10 to 0
     for i in range(10,-1,-1):
         print(i)
+
+
+    # I want you to take in a user input, and itterate through it by increments of 2. Have a try block catch any errors the user of code makes
     
     
 
