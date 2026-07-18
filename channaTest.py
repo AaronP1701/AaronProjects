@@ -98,7 +98,11 @@ def lessThan():  # Has the program print out each integer that is less than the 
 #          READ ME!!!!!
 # all of the above functions are previous projects you have done
 if __name__ == "__main__":
-    pass
+
+
+    # This code counts backwards from 10 to 0
+    for i in range(10,-1,-1):
+        print(i)
     
     
 
